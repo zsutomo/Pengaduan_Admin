@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pengaduan_admin</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Judul_list1">Pengaduan 1</string>
+    <string name="Judul_list2">Pengaduan 2</string>
+    <string name="Judul_list3">Pengaduan 3</string>
+
+    <string name="detail_list1">Detail List 1</string>
+    <string name="detail_list2">Detail List 2</string>
+    <string name="detail_list3">Detail List 3</string>
+</resources>
