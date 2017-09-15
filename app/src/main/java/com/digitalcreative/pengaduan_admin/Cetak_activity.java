@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 
 public class Cetak_activity extends AppCompatActivity {
@@ -34,40 +35,27 @@ public class Cetak_activity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            openDialog();
+                AlertDialog.Builder builder = new AlertDialog.Builder(Cetak_activity.this);
+                builder.setMessage("Apakah Anda Ingin Mencetak Form ini?");
+                builder.setPositiveButton(
+                        "Yes",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Toast.makeText(Cetak_activity.this, "Berhasil di Print", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                builder.setNegativeButton(
+                        "No",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                            }
+                        });
+                AlertDialog alert = builder.create();
+                alert.show();
             }
-        });
-    }
-
-//    private void showDialog() {
-//        AlertDialog.Builder builder = new AlertDialog().Builder(this);
-//        builder.setMessage("Write here your message");
-//        builder.setCancelable(true);
-//
-//        builder.setPositiveButton(
-//                "Yes",
-//                new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialogInterface, int i) {
-//                        dialogInterface.cancel();
-//                    }
-//                });
-//        builder.setNegativeButton(
-//                "No",
-//                new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialogInterface, int i) {
-//                        dialogInterface.cancel();
-//                    }
-//                });
-//        AlertDialog allert = builder.create();
-//        allert.show();
-//    }
-
-    public void openDialog(){
-        final Dialog dialog = new Dialog(context);
-        dialog.setContentView(R.layout.pop_up);
-        dialog.setTitle("Alert Dialog");
-        dialog.show();
+            });
     }
 }

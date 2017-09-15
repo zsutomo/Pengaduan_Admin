@@ -2,22 +2,13 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/digitalcreative/Documents/Workspace Riza/Pengaduan/AndroidFile/Pengaduan_admin/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/lawa/.android/build-cache/06abab6fd986a3de9128ed0915f2bbd5340f741d/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.1"
-        sha1="187eebf0d73948c87726a3f2231ae694875e6a27">
-        <dex dex="/Users/digitalcreative/Documents/Workspace Riza/Pengaduan/AndroidFile/Pengaduan_admin/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3ad6a0b9472d003c9bd1ec2eb4fab1315fb3a543/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/digitalcreative/Documents/Workspace Riza/Pengaduan/AndroidFile/Pengaduan_admin/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/digitalcreative/Documents/Workspace Riza/Pengaduan/AndroidFile/Pengaduan_admin/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d88f3dc5970215d897eeef7c1771ae832d7869be/classes.dex" />
+        sha1="1cf3005b5c103060dcf3be611eef843f6fb169cd">
+        <dex dex="/home/lawa/DC Project/PLN Pengaduan/Pengaduan_Admin/app/build/intermediates/pre-dexed/debug/classes_d4313c601d79f673aac40b47fe71b97a7fa4f96c.jar" />
     </item>
 
 </items>

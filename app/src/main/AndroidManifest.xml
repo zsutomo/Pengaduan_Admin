@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Cetak_activity" />
-        <activity android:name=".Lihat_Activity" />
-        <activity android:name=".Lihat_detil_Activity" />
+        <activity android:name=".List_Pengaduan" />
+        <activity android:name=".List_Pengaduan_Detail" />
         <activity android:name=".Lihat_detil_detil_activity"></activity>
     </application>
 

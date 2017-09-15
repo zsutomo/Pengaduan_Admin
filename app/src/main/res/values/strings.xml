@@ -3,11 +3,20 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="Judul_list1">Pengaduan 1</string>
+    <string name="Judul_list1">Nama Penyulang</string>
     <string name="Judul_list2">Pengaduan 2</string>
     <string name="Judul_list3">Pengaduan 3</string>
 
-    <string name="detail_list1">Detail List 1</string>
-    <string name="detail_list2">Detail List 2</string>
-    <string name="detail_list3">Detail List 3</string>
+    <string name="detail_list1">30</string>
+    <string name="detail_list2">5</string>
+    <string name="detail_list3">110</string>
+
+    <string name="Detail_list_nama">Jokowi Dodo</string>
+    <string name="Detail_list_kode_gardu">4D331FFG</string>
+    <string name="Detail_list_Daya">300 Kwh</string>
+    <string name="Detail_list_Alamat">Jalan Utama Demang daun Lebar</string>
+
+    <string name="Detail_list_tanggal">09</string>
+    <string name="Detail_list4">5</string>
+    <string name="detail_list5">110</string>
 </resources>

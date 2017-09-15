@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_home_admin">150dp</dimen>
+    <dimen name="title_size">15dp</dimen>
+    <dimen name="subtitle_text">18dp</dimen>
+    <dimen name="Titleuptitle_size">20dp</dimen>
+    <dimen name="margin_bot">10dp</dimen>
+</resources>
