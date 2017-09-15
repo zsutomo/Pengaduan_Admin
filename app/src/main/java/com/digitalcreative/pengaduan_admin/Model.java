@@ -5,15 +5,21 @@ package com.digitalcreative.pengaduan_admin;
  */
 
 public class Model {
+    String tanggal;
     String judul;
     String detail;
 
     public Model(String judul, String detail) {
+        this.tanggal = tanggal;
         this.judul = judul;
         this.detail = detail;
     }
 
     public Model() {
+    }
+
+    public String getTanggal() {
+        return tanggal;
     }
 
     public String getJudul() {
