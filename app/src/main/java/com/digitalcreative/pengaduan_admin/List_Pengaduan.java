@@ -9,7 +9,13 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.digitalcreative.pengaduan_admin.adapter.pengaduanlistadapter;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +25,7 @@ public class List_Pengaduan extends AppCompatActivity {
     private pengaduanlistadapter listadapter;
     private String judul;
     private String detail;
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,34 +40,44 @@ public class List_Pengaduan extends AppCompatActivity {
         //Set List
         listView = (ListView)findViewById(R.id.list_pengaduan);
         initData();
-        listadapter = new pengaduanlistadapter(getApplicationContext(),list);
-        listView.setAdapter(listadapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent =  new Intent(getApplicationContext(), List_Pengaduan_Detail.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
     private void initData() {
-        Model model;
         list = new ArrayList<>();
-        judul = getResources().getString(R.string.Judul_list1);
-        detail = getResources().getString(R.string.detail_list1);
-        model = new Model(judul,detail);
-        list.add(model);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase.child("pengaduan").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
 
-        judul = getResources().getString(R.string.Judul_list2);
-        detail = getResources().getString(R.string.detail_list2);
-        model = new Model(judul,detail);
-        list.add(model);
+                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
+                    Model model;
 
-        judul = getResources().getString(R.string.Judul_list3);
-        detail = getResources().getString(R.string.detail_list3);
-        model = new Model(judul,detail);
-        list.add(model);
+                    judul = postSnapshot.getKey();
+                    detail = String.valueOf(postSnapshot.getChildrenCount());
+                    model = new Model(judul,detail);
+                    System.out.println(judul);
+                    list.add(model);
+                }
+                listadapter = new pengaduanlistadapter(getApplicationContext(),list);
+                listView.setAdapter(listadapter);
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        System.out.println(list.get(i).getJudul());
+                        Intent intent =  new Intent(getApplicationContext(), List_Pengaduan_Detail.class);
+                        intent.putExtra("penyulang",list.get(i).getJudul());
+                        startActivity(intent);
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
 
     }
 }

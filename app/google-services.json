@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "573881096639",
+    "firebase_url": "https://plndigitalcreative-396bd.firebaseio.com",
+    "project_id": "plndigitalcreative-396bd",
+    "storage_bucket": "plndigitalcreative-396bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573881096639:android:820f81c05434e5d6",
+        "android_client_info": {
+          "package_name": "com.digitalcreative.pengaduan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573881096639-qnc8habjnvrce26knotfnddjf6prqj4l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digitalcreative.pengaduan",
+            "certificate_hash": "59c3414b5a9733ea20e672f2093019456dd2d022"
+          }
+        },
+        {
+          "client_id": "573881096639-8eptm34qoqu108kut9j7sp0d95aoigt3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLG3sqUzXHfGWngAfuvAj0Iv1v0HuHjUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573881096639-8eptm34qoqu108kut9j7sp0d95aoigt3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573881096639:android:89ac74cf604abbe2",
+        "android_client_info": {
+          "package_name": "com.digitalcreative.pengaduan_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573881096639-46v9ta3gver81fbsi4e5oi7qpsri2e0k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digitalcreative.pengaduan_admin",
+            "certificate_hash": "59c3414b5a9733ea20e672f2093019456dd2d022"
+          }
+        },
+        {
+          "client_id": "573881096639-8eptm34qoqu108kut9j7sp0d95aoigt3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLG3sqUzXHfGWngAfuvAj0Iv1v0HuHjUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573881096639-8eptm34qoqu108kut9j7sp0d95aoigt3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
