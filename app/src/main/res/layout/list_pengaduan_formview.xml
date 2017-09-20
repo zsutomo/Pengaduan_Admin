@@ -555,7 +555,7 @@
                         android:text="Jur A"
                         android:textColor="@color/subtitle_color"
                         android:textSize="@dimen/subtitle_text"
-                        android:id="@+id/fv_fusejurusan"/>
+                        android:id="@+id/fv_fusejurusans"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"

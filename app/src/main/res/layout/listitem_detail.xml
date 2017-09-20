@@ -110,24 +110,28 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/nama_text_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Srigala Auu"
                         android:textSize="14sp"
                         android:textColor="#9c000000"/>
                     <TextView
+                        android:id="@+id/kode_gardu_text_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="AZ1250"
                         android:textSize="14sp"
                         android:textColor="#9c000000"/>
                     <TextView
+                        android:id="@+id/daya_text_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="12.000 KWH"
                         android:textSize="14sp"
                         android:textColor="#9c000000"/>
                     <TextView
+                        android:id="@+id/alamat_text_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Alamat Palsu yang susah di cari"
