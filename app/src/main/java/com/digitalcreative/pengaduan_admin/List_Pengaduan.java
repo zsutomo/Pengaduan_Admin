@@ -1,9 +1,11 @@
 package com.digitalcreative.pengaduan_admin;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -35,12 +37,20 @@ public class List_Pengaduan extends AppCompatActivity {
         //Set Toolbar
         Toolbar toolbar = (Toolbar)findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("List Pengaduan");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         //Set List
         listView = (ListView)findViewById(R.id.list_pengaduan);
         initData();
 
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        Intent myIntent = new Intent(getApplicationContext(), Home_activity.class);
+        startActivityForResult(myIntent, 0);
+        return true;
     }
 
     private void initData() {

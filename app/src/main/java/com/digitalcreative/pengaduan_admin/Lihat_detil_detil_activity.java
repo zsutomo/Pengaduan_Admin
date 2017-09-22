@@ -1,9 +1,11 @@
 package com.digitalcreative.pengaduan_admin;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -30,7 +32,10 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
         //Set Toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Form Pengaduan");
+        toolbar.setTitleTextColor(Color.WHITE);
+
         Bundle extras = getIntent().getExtras();
         String uid=extras.getString("uid");
         String penyulang=extras.getString("penyulang");
@@ -233,5 +238,12 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
         });
 
 
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        TextView fv_penyulang =(TextView)findViewById(R.id.fv_penyulang);
+        Intent myIntent = new Intent(getApplicationContext(), List_Pengaduan_Detail.class);
+        myIntent.putExtra("penyulang",fv_penyulang.getText());
+        startActivityForResult(myIntent, 0);
+        return true;
     }
 }

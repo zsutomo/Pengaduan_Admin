@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/Users/malianzikri/.android/build-cache/0540e474fe1b186957dc13bf4a7cd92db47e3ff3/output/jars/classes.jar"
+        jar="/home/lawa/.android/build-cache/fd4a6335507dea7da7b503399f79027aacc226f3/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
-        sha1="1cf3005b5c103060dcf3be611eef843f6fb169cd">
-        <dex dex="/Users/malianzikri/Public/Digital Creative/Kodingan/TA/Pengaduan_Admin/app/build/intermediates/pre-dexed/debug/classes_a45ce42700ab47c37ddeaea664344d3d22d337c1.jar" />
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="/home/lawa/DC Project/PLN Pengaduan/Pengaduan_Admin/app/build/intermediates/pre-dexed/debug/classes_f859360dc3cc03ca1d760fdab139571434b91154.jar" />
     </item>
 
 </items>
