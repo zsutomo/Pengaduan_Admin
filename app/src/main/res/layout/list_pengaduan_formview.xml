@@ -37,7 +37,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Srigala Mata Kaki"
                     android:textSize="@dimen/subtitle_text"
                     android:textColor="@color/subtitle_color"
                     android:id="@+id/fv_namapetugas"/>
@@ -59,7 +58,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Srigala Polkadot"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_kapel"/>
@@ -81,7 +79,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="4K11aL4y"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_kodegardu"/>
@@ -103,7 +100,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Intan"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_penyulang"/>
@@ -125,7 +121,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="12000kwh"
                     android:textSize="@dimen/subtitle_text"
                     android:textColor="@color/subtitle_color"
                     android:id="@+id/fv_daya"/>
@@ -147,7 +142,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Polkadotcom"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_merk"/>
@@ -169,7 +163,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="012345"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_noserie"/>
@@ -191,7 +184,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="12"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_jumlahfasa"/>
@@ -213,7 +205,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2017"
                     android:textSize="@dimen/subtitle_text"
                     android:textColor="@color/subtitle_color"
                     android:id="@+id/fv_tapoperasi"/>
@@ -235,7 +226,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Trafo"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_konstruksitrafo"/>
@@ -257,7 +247,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ya"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_rekondisi"/>
@@ -279,7 +268,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2018"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_tahunpembuatan"/>
@@ -301,7 +289,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tidak"
                     android:textSize="@dimen/subtitle_text"
                     android:textColor="@color/subtitle_color"
                     android:id="@+id/fv_kuncigardu"/>
@@ -323,7 +310,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="konzzz"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_kokon"/>
@@ -345,7 +331,6 @@
                     android:layout_margin="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3112"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_schontrafo"/>
@@ -367,7 +352,6 @@
                     android:layout_margin="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1700"
                     android:textColor="@color/subtitle_color"
                     android:textSize="@dimen/subtitle_text"
                     android:id="@+id/fv_kebutuhanschoon"/>
@@ -418,7 +402,6 @@
                         android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="21991"
                         android:textSize="@dimen/subtitle_text"
                         android:textColor="@color/subtitle_color"
                         android:id="@+id/fv_primerphasaR"/>
@@ -440,7 +423,6 @@
                         android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="331455"
                         android:textColor="@color/subtitle_color"
                         android:textSize="@dimen/subtitle_text"
                         android:id="@+id/fv_primerphasaS"/>
@@ -462,7 +444,6 @@
                         android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="780000"
                         android:textColor="@color/subtitle_color"
                         android:textSize="@dimen/subtitle_text"
                         android:id="@+id/fv_primerphasaT"/>
@@ -484,7 +465,6 @@
                         android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Ya"
                         android:textColor="@color/subtitle_color"
                         android:textSize="@dimen/subtitle_text"
                         android:id="@+id/fv_saklarutamaPHB"/>
@@ -507,7 +487,6 @@
                         android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Jisamsung"
                         android:textSize="@dimen/subtitle_text"
                         android:textColor="@color/subtitle_color"
                         android:id="@+id/fv_PHBmerk"/>
@@ -530,7 +509,6 @@
                         android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="12000"
                         android:textColor="@color/subtitle_color"
                         android:textSize="@dimen/subtitle_text"
                         android:id="@+id/fv_PHBArus"/>
@@ -552,7 +530,6 @@
                         android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Jur A"
                         android:textColor="@color/subtitle_color"
                         android:textSize="@dimen/subtitle_text"
                         android:id="@+id/fv_fusejurusans"/>
@@ -579,7 +556,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="12"
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text"
                             android:id="@+id/fv_fuse_R"/>
@@ -601,7 +577,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="20"
                             android:textSize="@dimen/subtitle_text"
                             android:textColor="@color/subtitle_color"
                             android:id="@+id/fuse_S"/>
@@ -623,7 +598,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="15"
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text"
                             android:id="@+id/fv_fuse_T"/>
@@ -646,7 +620,6 @@
                         android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Jur D"
                         android:textColor="@color/subtitle_color"
                         android:textSize="@dimen/subtitle_text"
                         android:id="@+id/fv_fusejurusan"/>
@@ -673,7 +646,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="12"
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text"
                             android:id="@+id/fv_NH_R"/>
@@ -695,7 +667,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="20"
                             android:textSize="@dimen/subtitle_text"
                             android:textColor="@color/subtitle_color"
                             android:id="@+id/NH_S"/>
@@ -717,7 +688,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="15"
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text"
                             android:id="@+id/fv_NH_T"/>
@@ -740,7 +710,6 @@
                         android:layout_marginLeft="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="50"
                         android:textColor="@color/subtitle_color"
                         android:textSize="@dimen/subtitle_text"
                         android:id="@+id/fv_jumlaharresterterpasang"/>
@@ -793,7 +762,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="15000"
                             android:textSize="@dimen/subtitle_text"
                             android:textColor="@color/subtitle_color"
                             android:id="@+id/fv_tahananarrester"/>
@@ -815,7 +783,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="10000"
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text"
                             android:id="@+id/fv_tahanannetral"/>
@@ -837,7 +804,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="1000"
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text"
                             android:id="@+id/fv_tahananbodytrafo"/>
@@ -890,7 +856,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="NYY"
                             android:textSize="@dimen/subtitle_text"
                             android:textColor="@color/subtitle_color"
                             android:id="@+id/fv_jeniskabelINLET"/>
@@ -912,7 +877,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="240"
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text"
                             android:id="@+id/fv_penampangINLET"/>
@@ -934,7 +898,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Jur C"
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text"
                             android:id="@+id/fv_jeniskabelOUTLET"/>
@@ -961,7 +924,6 @@
                                 android:layout_marginLeft="8dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="NYY"
                                 android:textColor="@color/subtitle_color"
                                 android:textSize="@dimen/subtitle_text"
                                 android:id="@+id/fv_jeniskabel"/>
@@ -983,7 +945,6 @@
                                 android:layout_marginLeft="8dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="240"
                                 android:textSize="@dimen/subtitle_text"
                                 android:textColor="@color/subtitle_color"
                                 android:id="@+id/fv_penampangOUTLET"/>
@@ -1006,7 +967,6 @@
                             android:layout_marginLeft="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Join Bimetal"
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text"
                             android:id="@+id/fv_sambungankabelkejtr"/>

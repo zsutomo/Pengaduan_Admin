@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.digitalcreative.pengaduan_admin">
 
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home_activity">
+        <activity android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +26,8 @@
         <activity android:name=".Cetak_activity" />
         <activity android:name=".List_Pengaduan" />
         <activity android:name=".List_Pengaduan_Detail" />
-        <activity android:name=".Lihat_detil_detil_activity"></activity>
+        <activity android:name=".Lihat_detil_detil_activity" />
+        <activity android:name=".Home_activity"></activity>
     </application>
 
 </manifest>
