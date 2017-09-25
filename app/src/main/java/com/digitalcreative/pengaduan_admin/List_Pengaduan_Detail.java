@@ -70,7 +70,7 @@ public class List_Pengaduan_Detail extends AppCompatActivity {
         mDatabase.child("pengaduan").child(penyulang).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-
+                List<Model_Pengaduan> list_sort= new ArrayList<>();
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
                     Model_Pengaduan model_pengaduan=new Model_Pengaduan();
                     String tanggal=postSnapshot.child("tanggal").getValue().toString() ;
@@ -85,7 +85,11 @@ public class List_Pengaduan_Detail extends AppCompatActivity {
                     model_pengaduan.setTanggal(tanggal);
                     model_pengaduan.setNama(nama);
                     model_pengaduan.setUid(uid);
-                    list.add(model_pengaduan);
+                    list_sort.add(model_pengaduan);
+                }
+
+                for(int i=list_sort.size()-1; i>=0; i--){
+                    list.add(list_sort.get(i));
                 }
                 listadapter = new pengaduanlistadapter_detail(getApplicationContext(),list);
                 listView.setAdapter(listadapter);
