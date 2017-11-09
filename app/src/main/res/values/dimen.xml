@@ -5,4 +5,9 @@
     <dimen name="subtitle_text">18dp</dimen>
     <dimen name="Titleuptitle_size">20dp</dimen>
     <dimen name="margin_bot">10dp</dimen>
+    <dimen name="button_width_ya_tidak">70dp</dimen>
+    <dimen name="button_height_ya_tidak">40dp</dimen>
+    <dimen name="right_margin_custom_A">10dp</dimen>
+    <dimen name="rigth_margin_custom_B">7dp</dimen>
+    <dimen name="height_rectangleround">35dp</dimen>
 </resources>

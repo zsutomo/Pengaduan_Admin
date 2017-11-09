@@ -96,7 +96,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="©copyright Digital Creative"
+        android:text="©copyright 2017"
         android:gravity="center|bottom"
         android:textAllCaps="true"
         android:layout_margin="10dp"

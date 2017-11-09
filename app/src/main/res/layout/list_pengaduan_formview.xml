@@ -592,123 +592,30 @@
                             android:text="Fuse Jurusan"
                             android:textSize="@dimen/title_size" />
 
-                        <TextView
-                            android:id="@+id/fv_fusejurusans"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="8dp"
-                            android:textColor="@color/subtitle_color"
-                            android:textSize="@dimen/subtitle_text" />
-                    </LinearLayout>
+                            android:weightSum="1">
 
+                            <include
+                                layout="@layout/fuse_jurusan"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--Jurusan_A Fuse -->
                     <LinearLayout
+                        android:id="@+id/text_gone_fuse_jurusan_A"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/margin_bot"
-                            android:orientation="vertical"
-                            android:paddingLeft="6dp"
-                            android:paddingRight="6dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"
-                                android:text="R"
-                                android:textSize="@dimen/title_size" />
-
-                            <TextView
-                                android:id="@+id/fv_fuse_R"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="8dp"
-                                android:textColor="@color/subtitle_color"
-                                android:textSize="@dimen/subtitle_text" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/margin_bot"
-                            android:background="@color/Form_Pengaduan"
-                            android:orientation="vertical"
-                            android:padding="6dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"
-                                android:text="S"
-                                android:textSize="@dimen/title_size" />
-
-                            <TextView
-                                android:id="@+id/fuse_S"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="8dp"
-                                android:textColor="@color/subtitle_color"
-                                android:textSize="@dimen/subtitle_text" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/margin_bot"
-                            android:orientation="vertical"
-                            android:paddingLeft="6dp"
-                            android:paddingRight="6dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"
-                                android:text="T"
-                                android:textSize="@dimen/title_size" />
-
-                            <TextView
-                                android:id="@+id/fv_fuse_T"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="8dp"
-                                android:textColor="@color/subtitle_color"
-                                android:textSize="@dimen/subtitle_text" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin_bot"
-                        android:background="@color/Form_Pengaduan"
                         android:orientation="vertical"
-                        android:padding="6dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:text="NH Jurusan"
-                            android:textSize="@dimen/title_size" />
-
-                        <TextView
-                            android:id="@+id/fv_fusejurusan"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="8dp"
-                            android:textColor="@color/subtitle_color"
-                            android:textSize="@dimen/subtitle_text" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:orientation="vertical">
+                        android:visibility="gone">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -726,7 +633,7 @@
                                 android:textSize="@dimen/title_size" />
 
                             <TextView
-                                android:id="@+id/fv_NH_R"
+                                android:id="@+id/jurusan_A_fuse_R"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="8dp"
@@ -750,7 +657,7 @@
                                 android:textSize="@dimen/title_size" />
 
                             <TextView
-                                android:id="@+id/NH_S"
+                                android:id="@+id/jurusan_A_fuse_S"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="8dp"
@@ -774,7 +681,7 @@
                                 android:textSize="@dimen/title_size" />
 
                             <TextView
-                                android:id="@+id/fv_NH_T"
+                                android:id="@+id/jurusan_A_fuse_T"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="8dp"
@@ -782,6 +689,625 @@
                                 android:textSize="@dimen/subtitle_text" />
                         </LinearLayout>
                     </LinearLayout>
+
+                    <!--Jurusan_B Fuse -->
+                    <LinearLayout
+                        android:id="@+id/text_gone_fuse_jurusan_B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_bot"
+                            android:orientation="vertical"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="R"
+                                android:textSize="@dimen/title_size" />
+
+                            <TextView
+                                android:id="@+id/jurusan_B_fuse_R"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/subtitle_color"
+                                android:textSize="@dimen/subtitle_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_bot"
+                            android:background="@color/Form_Pengaduan"
+                            android:orientation="vertical"
+                            android:padding="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="S"
+                                android:textSize="@dimen/title_size" />
+
+                            <TextView
+                                android:id="@+id/jurusan_B_fuse_S"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/subtitle_color"
+                                android:textSize="@dimen/subtitle_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_bot"
+                            android:orientation="vertical"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="T"
+                                android:textSize="@dimen/title_size" />
+
+                            <TextView
+                                android:id="@+id/jurusan_B_fuse_T"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/subtitle_color"
+                                android:textSize="@dimen/subtitle_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Jurusan_C Fuse -->
+                    <LinearLayout
+                        android:id="@+id/text_gone_fuse_jurusan_C"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_bot"
+                            android:orientation="vertical"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="R"
+                                android:textSize="@dimen/title_size" />
+
+                            <TextView
+                                android:id="@+id/jurusan_C_fuse_R"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/subtitle_color"
+                                android:textSize="@dimen/subtitle_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_bot"
+                            android:background="@color/Form_Pengaduan"
+                            android:orientation="vertical"
+                            android:padding="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="S"
+                                android:textSize="@dimen/title_size" />
+
+                            <TextView
+                                android:id="@+id/jurusan_C_fuse_S"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/subtitle_color"
+                                android:textSize="@dimen/subtitle_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_bot"
+                            android:orientation="vertical"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="T"
+                                android:textSize="@dimen/title_size" />
+
+                            <TextView
+                                android:id="@+id/jurusan_C_fuse_T"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/subtitle_color"
+                                android:textSize="@dimen/subtitle_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Jurusan_D_Fuse -->
+                    <LinearLayout
+                        android:id="@+id/text_gone_fuse_jurusan_D"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_bot"
+                            android:orientation="vertical"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="R"
+                                android:textSize="@dimen/title_size" />
+
+                            <TextView
+                                android:id="@+id/jurusan_D_fuse_R"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/subtitle_color"
+                                android:textSize="@dimen/subtitle_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_bot"
+                            android:background="@color/Form_Pengaduan"
+                            android:orientation="vertical"
+                            android:padding="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="S"
+                                android:textSize="@dimen/title_size" />
+
+                            <TextView
+                                android:id="@+id/jurusan_D_fuse_S"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/subtitle_color"
+                                android:textSize="@dimen/subtitle_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_bot"
+                            android:orientation="vertical"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:text="T"
+                                android:textSize="@dimen/title_size" />
+
+                            <TextView
+                                android:id="@+id/jurusan_D_fuse_T"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/subtitle_color"
+                                android:textSize="@dimen/subtitle_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bot"
+                    android:background="@color/Form_Pengaduan"
+                    android:orientation="vertical"
+                    android:padding="6dp"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="NH Jurusan"
+                        android:textSize="@dimen/title_size" />
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/fv_NH_jurusan"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="8dp"-->
+                        <!--android:textColor="@color/subtitle_color"-->
+                        <!--android:textSize="@dimen/subtitle_text" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1">
+
+                        <include
+                            layout="@layout/nh_jurusan"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/text_gone_NH_jurusan_A"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:orientation="vertical"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="R"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_R_A"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:background="@color/Form_Pengaduan"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="S"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_S_A"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:orientation="vertical"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="T"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_T_A"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/text_gone_NH_jurusan_B"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:orientation="vertical"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="R"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_R_B"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:background="@color/Form_Pengaduan"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="S"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_S_B"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:orientation="vertical"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="T"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_T_B"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/text_gone_NH_jurusan_C"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:orientation="vertical"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="R"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_R_C"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:background="@color/Form_Pengaduan"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="S"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_S_C"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:orientation="vertical"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="T"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_T_C"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/text_gone_NH_jurusan_D"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:orientation="vertical"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="R"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_R_D"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:background="@color/Form_Pengaduan"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="S"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_S_D"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_bot"
+                                android:orientation="vertical"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="T"
+                                    android:textSize="@dimen/title_size" />
+
+                                <TextView
+                                    android:id="@+id/tv_NH_T_D"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/subtitle_color"
+                                    android:textSize="@dimen/subtitle_text" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1093,6 +1619,30 @@
                             android:textColor="@color/subtitle_color"
                             android:textSize="@dimen/subtitle_text" />
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bot"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Keterangan"
+                            android:textSize="@dimen/title_size" />
+
+                        <TextView
+                            android:id="@+id/tv_keterangan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/subtitle_color"
+                            android:textSize="@dimen/subtitle_text" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -1103,5 +1653,5 @@
         android:id="@+id/tool_bar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        layout="@layout/toolbar"/>
+        layout="@layout/toolbar" />
 </LinearLayout>
