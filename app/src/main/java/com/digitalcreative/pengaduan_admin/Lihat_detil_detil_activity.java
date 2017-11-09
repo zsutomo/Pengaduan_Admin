@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -84,26 +86,29 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 String saklar_arus=dataSnapshot.child("saklar_arus").getValue().toString() ;
 
                 String fuse_jurusan=dataSnapshot.child("fuse_jurusan").getValue().toString() ;
-                String fuse_R_Jur_A=dataSnapshot.child("fuse_R_Jur_A").getValue().toString() ;
-                String fuse_S_Jur_A=dataSnapshot.child("fuse_S_Jur_A").getValue().toString() ;
-                String fuse_T_Jur_A=dataSnapshot.child("fuse_T_Jur_A").getValue().toString() ;
-                String fuse_R_Jur_B=dataSnapshot.child("fuse_R_Jur_B").getValue().toString() ;
-                String fuse_S_Jur_B=dataSnapshot.child("fuse_S_Jur_B").getValue().toString() ;
-                String fuse_T_Jur_B=dataSnapshot.child("fuse_T_Jur_B").getValue().toString() ;
+                final String fuse_R_Jur_A=dataSnapshot.child("fuse_R_Jur_A").getValue().toString() ;
+                final String fuse_S_Jur_A=dataSnapshot.child("fuse_S_Jur_A").getValue().toString() ;
+                final String fuse_T_Jur_A=dataSnapshot.child("fuse_T_Jur_A").getValue().toString() ;
+                final String fuse_R_Jur_B=dataSnapshot.child("fuse_R_Jur_B").getValue().toString() ;
+                final String fuse_S_Jur_B=dataSnapshot.child("fuse_S_Jur_B").getValue().toString() ;
+                final String fuse_T_Jur_B=dataSnapshot.child("fuse_T_Jur_B").getValue().toString() ;
                 String fuse_R_Jur_C=dataSnapshot.child("fuse_R_Jur_C").getValue().toString() ;
                 String fuse_S_Jur_C=dataSnapshot.child("fuse_S_Jur_C").getValue().toString() ;
                 String fuse_T_Jur_C=dataSnapshot.child("fuse_T_Jur_C").getValue().toString() ;
+//                String fuse_R_Jur_D=dataSnapshot.child("fuse_R_Jur_D").getValue().toString() ;
+//                String fuse_S_Jur_D=dataSnapshot.child("fuse_S_Jur_D").getValue().toString() ;
+//                String fuse_T_Jur_D=dataSnapshot.child("fuse_T_Jur_D").getValue().toString() ;
 
                 String nh_jurusan=dataSnapshot.child("nh_jurusan").getValue().toString() ;
-                String NH_R_Jur_A=dataSnapshot.child("nh_R_Jur_A").getValue().toString() ;
-                String NH_S_Jur_A =dataSnapshot.child("nh_S_Jur_A").getValue().toString();
-                String NH_T_Jur_A=dataSnapshot.child("nh_T_Jur_A").getValue().toString() ;
-                String NH_R_Jur_B=dataSnapshot.child("nh_R_Jur_B").getValue().toString() ;
-                String NH_S_Jur_B=dataSnapshot.child("nh_S_Jur_B").getValue().toString() ;
-                String NH_T_Jur_B=dataSnapshot.child("nh_T_Jur_B").getValue().toString() ;
-                String NH_R_Jur_C=dataSnapshot.child("nh_R_Jur_C").getValue().toString() ;
-                String NH_S_Jur_C=dataSnapshot.child("nh_S_Jur_C").getValue().toString() ;
-                String NH_T_Jur_C=dataSnapshot.child("nh_T_Jur_C").getValue().toString() ;
+                final String NH_R_Jur_A=dataSnapshot.child("nh_R_Jur_A").getValue().toString() ;
+                final String NH_S_Jur_A =dataSnapshot.child("nh_S_Jur_A").getValue().toString();
+                final String NH_T_Jur_A=dataSnapshot.child("nh_T_Jur_A").getValue().toString() ;
+                final String NH_R_Jur_B=dataSnapshot.child("nh_R_Jur_B").getValue().toString() ;
+                final String NH_S_Jur_B=dataSnapshot.child("nh_S_Jur_B").getValue().toString() ;
+                final String NH_T_Jur_B=dataSnapshot.child("nh_T_Jur_B").getValue().toString() ;
+                final String NH_R_Jur_C=dataSnapshot.child("nh_R_Jur_C").getValue().toString() ;
+                final String NH_S_Jur_C=dataSnapshot.child("nh_S_Jur_C").getValue().toString() ;
+                final String NH_T_Jur_C=dataSnapshot.child("nh_T_Jur_C").getValue().toString() ;
                 String NH_R_Jur_D=dataSnapshot.child("nh_R_Jur_D").getValue().toString() ;
                 String NH_S_Jur_D=dataSnapshot.child("nh_S_Jur_D").getValue().toString() ;
                 String NH_T_Jur_D=dataSnapshot.child("nh_T_Jur_D").getValue().toString() ;
@@ -188,15 +193,67 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 TextView fv_saklarutamaPHB =(TextView)findViewById(R.id.fv_saklarutamaPHB);
                 TextView fv_PHBmerk =(TextView)findViewById(R.id.fv_PHBmerk);
                 TextView fv_PHBArus =(TextView)findViewById(R.id.fv_PHBArus);
-                TextView fv_fusejurusans =(TextView)findViewById(R.id.fv_fusejurusans);
-                TextView fv_fuse_R =(TextView)findViewById(R.id.fv_fuse_R);
-                TextView fuse_S =(TextView)findViewById(R.id.fuse_S);
-                TextView fv_fuse_T =(TextView)findViewById(R.id.fv_fuse_T);
-                TextView fv_fusejurusan =(TextView)findViewById(R.id.fv_fusejurusan);
 
-                TextView fv_NH_R =(TextView)findViewById(R.id.fv_NH_R);
-                TextView NH_S =(TextView)findViewById(R.id.NH_S);
-                TextView NH_T =(TextView)findViewById(R.id.fv_NH_T);
+                final TextView jurusan_A_fuse_R =(TextView)findViewById(R.id.jurusan_A_fuse_R);
+                final TextView jurusan_A_fuse_S =(TextView)findViewById(R.id.jurusan_A_fuse_S);
+                final TextView jurusan_A_fuse_T =(TextView)findViewById(R.id.jurusan_A_fuse_T);
+
+                TextView jurusan_B_fuse_R =(TextView)findViewById(R.id.jurusan_B_fuse_R);
+                TextView jurusan_B_fuse_S =(TextView)findViewById(R.id.jurusan_B_fuse_S);
+                TextView jurusan_B_fuse_T =(TextView)findViewById(R.id.jurusan_B_fuse_T);
+
+                TextView jurusan_C_fuse_R =(TextView)findViewById(R.id.jurusan_C_fuse_R);
+                TextView jurusan_C_fuse_S =(TextView)findViewById(R.id.jurusan_C_fuse_S);
+                TextView jurusan_C_fuse_T =(TextView)findViewById(R.id.jurusan_C_fuse_T);
+
+                TextView jurusan_D_fuse_R =(TextView)findViewById(R.id.jurusan_D_fuse_R);
+                TextView jurusan_D_fuse_S =(TextView)findViewById(R.id.jurusan_D_fuse_S);
+                TextView jurusan_D_fuse_T =(TextView)findViewById(R.id.jurusan_D_fuse_T);
+
+//                TextView fv_fusejurusan =(TextView)findViewById(R.id.fv_NH_jurusan);
+
+                final Button button_jurusan_A = (Button) findViewById(R.id.fuse_jurusan_A);
+                final Button button_jurusan_B = (Button) findViewById(R.id.fuse_jurusan_B);
+                final Button button_jurusan_C = (Button) findViewById(R.id.fuse_jurusan_C);
+                final Button button_jurusan_D = (Button) findViewById(R.id.fuse_jurusan_D);
+
+                final Button button_NH_jurusan_A = (Button) findViewById(R.id.NH_jurusan_A);
+                final Button button_NH_jurusan_B = (Button) findViewById(R.id.NH_jurusan_B);
+                final Button button_NH_jurusan_C = (Button) findViewById(R.id.NH_jurusan_C);
+                final Button button_NH_jurusan_D = (Button) findViewById(R.id.NH_jurusan_D);
+
+
+                final LinearLayout Jur_A_fuse = (LinearLayout) findViewById(R.id.text_gone_fuse_jurusan_A);
+                final LinearLayout Jur_B_fuse = (LinearLayout) findViewById(R.id.text_gone_fuse_jurusan_B);
+                final LinearLayout Jur_C_fuse = (LinearLayout) findViewById(R.id.text_gone_fuse_jurusan_C);
+                final LinearLayout Jur_D_fuse = (LinearLayout) findViewById(R.id.text_gone_fuse_jurusan_D);
+
+                final LinearLayout Jur_NH_A = (LinearLayout) findViewById(R.id.text_gone_NH_jurusan_A);
+                final LinearLayout Jur_NH_B = (LinearLayout) findViewById(R.id.text_gone_NH_jurusan_B);
+                final LinearLayout Jur_NH_C = (LinearLayout) findViewById(R.id.text_gone_NH_jurusan_C);
+                final LinearLayout Jur_NH_D = (LinearLayout) findViewById(R.id.text_gone_NH_jurusan_D);
+
+
+                final TextView NH_R_A =(TextView)findViewById(R.id.tv_NH_R_A);
+                final TextView NH_S_A =(TextView)findViewById(R.id.tv_NH_S_A);
+                final TextView NH_T_A =(TextView)findViewById(R.id.tv_NH_T_A);
+
+                final TextView NH_R_B =(TextView)findViewById(R.id.tv_NH_R_B);
+                final TextView NH_S_B =(TextView)findViewById(R.id.tv_NH_S_B);
+                final TextView NH_T_B =(TextView)findViewById(R.id.tv_NH_T_B);
+
+                final TextView NH_R_C =(TextView)findViewById(R.id.tv_NH_R_C);
+                final TextView NH_S_C =(TextView)findViewById(R.id.tv_NH_S_C);
+                final TextView NH_T_C =(TextView)findViewById(R.id.tv_NH_T_C);
+
+                final TextView NH_R_D =(TextView)findViewById(R.id.tv_NH_R_D);
+                final TextView NH_S_D =(TextView)findViewById(R.id.tv_NH_S_D);
+                final TextView NH_T_D =(TextView)findViewById(R.id.tv_NH_T_D);
+
+
+
+
+
                 TextView fv_jumlaharresterterpasang =(TextView)findViewById(R.id.fv_jumlaharresterterpasang);
                 TextView fv_tahananarrester =(TextView)findViewById(R.id.fv_tahananarrester);
                 TextView fv_tahanannetral =(TextView)findViewById(R.id.fv_tahanannetral);
@@ -207,6 +264,7 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 TextView fv_jeniskabel =(TextView)findViewById(R.id.fv_jeniskabel);
                 TextView fv_penampangOUTLET =(TextView)findViewById(R.id.fv_penampangOUTLET);
                 TextView fv_sambungankabelkejtr =(TextView)findViewById(R.id.fv_sambungankabelkejtr);
+                TextView tv_keterangan = (TextView) findViewById(R.id.tv_keterangan);
 
                 fv_namapetugas.setText(petugas);
                 fv_kapel.setText(kapel);
@@ -237,47 +295,178 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                     fv_PHBArus.setText(saklar_arus);
                 }
 
+                button_jurusan_A.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_A_fuse.setVisibility(View.VISIBLE);
+                        Jur_C_fuse.setVisibility(View.INVISIBLE);
+                        Jur_B_fuse.setVisibility(View.INVISIBLE);
+                        Jur_D_fuse.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        button_jurusan_B.setSelected(false);
+                        button_jurusan_C.setSelected(false);
+                        button_jurusan_D.setSelected(false);
+                    }
+                });
+
+                button_jurusan_B.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_B_fuse.setVisibility(View.VISIBLE);
+                        Jur_A_fuse.setVisibility(View.INVISIBLE);
+                        Jur_C_fuse.setVisibility(View.INVISIBLE);
+                        Jur_D_fuse.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        button_jurusan_A.setSelected(false);
+                        button_jurusan_C.setSelected(false);
+                        button_jurusan_D.setSelected(false);
+                    }
+                });
+
+                button_jurusan_C.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_C_fuse.setVisibility(View.VISIBLE);
+                        Jur_A_fuse.setVisibility(View.INVISIBLE);
+                        Jur_B_fuse.setVisibility(View.INVISIBLE);
+                        Jur_D_fuse.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        button_jurusan_B.setSelected(false);
+                        button_jurusan_A.setSelected(false);
+                        button_jurusan_D.setSelected(false);
+                    }
+                });
+
+                button_jurusan_D.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_D_fuse.setVisibility(View.VISIBLE);
+                        Jur_A_fuse.setVisibility(View.INVISIBLE);
+                        Jur_B_fuse.setVisibility(View.INVISIBLE);
+                        Jur_C_fuse.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        button_jurusan_B.setSelected(false);
+                        button_jurusan_A.setSelected(false);
+                        button_jurusan_D.setSelected(false);
+                    }
+                });
+
+
                 if(fuse_jurusan.toLowerCase().equals("jurusan a")){
-                    fv_fusejurusans.setText(fuse_jurusan);
-                    fv_fuse_R.setText(fuse_R_Jur_A);
-                    fuse_S.setText(fuse_S_Jur_A);
-                    fv_fuse_T.setText(fuse_T_Jur_A);
+                    jurusan_A_fuse_R.setText(fuse_R_Jur_A);
+                    jurusan_A_fuse_S.setText(fuse_S_Jur_A);
+                    jurusan_A_fuse_T.setText(fuse_T_Jur_A);
+                    button_jurusan_A.setSelected(true);
+                    Jur_A_fuse.setVisibility(View.VISIBLE);
+
                 }else if(fuse_jurusan.toLowerCase().equals("jurusan b")){
-                    fv_fusejurusans.setText(fuse_jurusan);
-                    fv_fuse_R.setText(fuse_R_Jur_B);
-                    fuse_S.setText(fuse_S_Jur_B);
-                    fv_fuse_T.setText(fuse_T_Jur_B);
+                    jurusan_B_fuse_R.setText(fuse_R_Jur_B);
+                    jurusan_B_fuse_S.setText(fuse_S_Jur_B);
+                    jurusan_B_fuse_T.setText(fuse_T_Jur_B);
+                    button_jurusan_B.setSelected(true);
+                    Jur_B_fuse.setVisibility(View.VISIBLE);
+
                 }else if(fuse_jurusan.toLowerCase().equals("jurusan c")){
-                    fv_fusejurusans.setText(fuse_jurusan);
-                    fv_fuse_R.setText(fuse_R_Jur_C);
-                    fuse_S.setText(fuse_S_Jur_C);
-                    fv_fuse_T.setText(fuse_T_Jur_C);
+                    jurusan_C_fuse_R.setText(fuse_R_Jur_C);
+                    jurusan_C_fuse_S.setText(fuse_S_Jur_C);
+                    jurusan_C_fuse_T.setText(fuse_T_Jur_C);
+                    button_jurusan_C.setSelected(true);
+                    Jur_C_fuse.setVisibility(View.VISIBLE);
 
                 }
+//                else if (fuse_jurusan.toLowerCase().equals("jurusan d")) {
+//                    jurusan_D_fuse_R.setText(fuse_R_Jur_D);
+//                    jurusan_D_fuse_S.setText(fuse_S_Jur_D);
+//                    jurusan_D_fuse_T.setText(fuse_T_Jur_D);
+//                    button_jurusan_D.setSelected(true);
+//
+//                }
+
+                button_NH_jurusan_A.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_NH_A.setVisibility(View.VISIBLE);
+                        Jur_NH_B.setVisibility(View.INVISIBLE);
+                        Jur_NH_C.setVisibility(View.INVISIBLE);
+                        Jur_NH_D.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        button_NH_jurusan_B.setSelected(false);
+                        button_NH_jurusan_C.setSelected(false);
+                        button_NH_jurusan_D.setSelected(false);
+                    }
+                });
+
+                button_NH_jurusan_B.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_NH_B.setVisibility(View.VISIBLE);
+                        Jur_NH_A.setVisibility(View.INVISIBLE);
+                        Jur_NH_C.setVisibility(View.INVISIBLE);
+                        Jur_NH_D.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        button_NH_jurusan_A.setSelected(false);
+                        button_NH_jurusan_C.setSelected(false);
+                        button_NH_jurusan_D.setSelected(false);
+                    }
+                });
+
+                button_NH_jurusan_C.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_NH_C.setVisibility(View.VISIBLE);
+                        Jur_NH_A.setVisibility(View.INVISIBLE);
+                        Jur_NH_B.setVisibility(View.INVISIBLE);
+                        Jur_NH_D.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        button_NH_jurusan_B.setSelected(false);
+                        button_NH_jurusan_A.setSelected(false);
+                        button_NH_jurusan_D.setSelected(false);
+                    }
+                });
+
+                button_NH_jurusan_D.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_NH_D.setVisibility(View.VISIBLE);
+                        Jur_NH_B.setVisibility(View.INVISIBLE);
+                        Jur_NH_C.setVisibility(View.INVISIBLE);
+                        Jur_NH_A.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        button_NH_jurusan_B.setSelected(false);
+                        button_NH_jurusan_C.setSelected(false);
+                        button_NH_jurusan_A.setSelected(false);
+                    }
+                });
 
                 if(nh_jurusan.toLowerCase().equals("jurusan a")){
-                    fv_fusejurusan.setText(nh_jurusan);
-                    fv_NH_R.setText(NH_R_Jur_A);
-                    NH_S.setText(NH_S_Jur_A);
-                    NH_T.setText(NH_T_Jur_A);
+
+                    NH_R_A.setText(NH_R_Jur_A);
+                    NH_S_A.setText(NH_S_Jur_A);
+                    NH_T_A.setText(NH_T_Jur_A);
+                    button_NH_jurusan_A.setSelected(true);
+                    Jur_NH_A.setVisibility(View.VISIBLE);
 
                 }else  if(nh_jurusan.toLowerCase().equals("jurusan b")){
-                    fv_fusejurusan.setText(nh_jurusan);
-                    fv_NH_R.setText(NH_R_Jur_B);
-                    NH_S.setText(NH_S_Jur_B);
-                    NH_T.setText(NH_T_Jur_B);
+
+                    NH_R_B.setText(NH_R_Jur_B);
+                    NH_S_B.setText(NH_S_Jur_B);
+                    NH_T_B.setText(NH_T_Jur_B);
+                    button_NH_jurusan_B.setSelected(true);
+                    Jur_NH_B.setVisibility(View.VISIBLE);
 
                 }else  if(nh_jurusan.toLowerCase().equals("jurusan c")){
-                    fv_fusejurusan.setText(nh_jurusan);
-                    fv_NH_R.setText(NH_R_Jur_C);
-                    NH_S.setText(NH_S_Jur_C);
-                    NH_T.setText(NH_T_Jur_C);
+                    NH_R_C.setText(NH_R_Jur_C);
+                    NH_S_C.setText(NH_S_Jur_C);
+                    NH_T_C.setText(NH_T_Jur_C);
+                    button_NH_jurusan_C.setSelected(true);
+                    Jur_NH_C.setVisibility(View.VISIBLE);
 
                 }else  if(nh_jurusan.toLowerCase().equals("jurusan d")){
-                    fv_fusejurusan.setText(nh_jurusan);
-                    fv_NH_R.setText(NH_R_Jur_D);
-                    NH_S.setText(NH_S_Jur_D);
-                    NH_T.setText(NH_T_Jur_D);
+                    NH_R_D.setText(NH_R_Jur_D);
+                    NH_S_D.setText(NH_S_Jur_D);
+                    NH_T_D.setText(NH_T_Jur_D);
+                    button_NH_jurusan_D.setSelected(true);
+                    Jur_NH_D.setVisibility(View.VISIBLE);
 
                 }
 

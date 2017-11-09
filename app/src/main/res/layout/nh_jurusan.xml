@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/NH_jurusan_A"
+                android:layout_width="@dimen/button_width_ya_tidak"
+                android:layout_height="@dimen/button_height_ya_tidak"
+                android:layout_marginRight="@dimen/right_margin_custom_A"
+                android:background="@drawable/button_main"
+                android:text="Jur A"
+                android:textColor="@drawable/text_color"
+                android:layout_weight="0.01" />
+
+            <Button
+                android:id="@+id/NH_jurusan_B"
+                android:layout_width="@dimen/button_width_ya_tidak"
+                android:layout_height="@dimen/button_height_ya_tidak"
+                android:layout_marginRight="@dimen/right_margin_custom_A"
+                android:background="@drawable/button_main"
+                android:text="Jur B"
+                android:textColor="@drawable/text_color" />
+
+            <Button
+                android:id="@+id/NH_jurusan_C"
+                android:layout_width="@dimen/button_width_ya_tidak"
+                android:layout_height="@dimen/button_height_ya_tidak"
+                android:layout_marginRight="@dimen/right_margin_custom_A"
+                android:background="@drawable/button_main"
+                android:text="Jur C"
+                android:textColor="@drawable/text_color" />
+
+            <Button
+                android:id="@+id/NH_jurusan_D"
+                android:layout_width="@dimen/button_width_ya_tidak"
+                android:layout_height="@dimen/button_height_ya_tidak"
+                android:layout_marginRight="@dimen/right_margin_custom_A"
+                android:background="@drawable/button_main"
+                android:text="Jur D"
+                android:textColor="@drawable/text_color"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
