@@ -10,4 +10,5 @@
     <dimen name="right_margin_custom_A">10dp</dimen>
     <dimen name="rigth_margin_custom_B">7dp</dimen>
     <dimen name="height_rectangleround">35dp</dimen>
+    <dimen name="titlesize">17sp</dimen>
 </resources>
