@@ -233,6 +233,14 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 final LinearLayout Jur_NH_C = (LinearLayout) findViewById(R.id.text_gone_NH_jurusan_C);
                 final LinearLayout Jur_NH_D = (LinearLayout) findViewById(R.id.text_gone_NH_jurusan_D);
 
+                final LinearLayout Jur_A_Data_Kabel = (LinearLayout) findViewById(R.id.jur_A_data_kabel);
+                final LinearLayout Jur_B_Data_Kabel = (LinearLayout) findViewById(R.id.jur_B_data_kabel);
+                final LinearLayout Jur_C_Data_Kabel = (LinearLayout) findViewById(R.id.jur_C_data_kabel);
+                final LinearLayout Jur_D_Data_Kabel = (LinearLayout) findViewById(R.id.jur_D_data_kabel);
+
+
+
+
 
                 final TextView NH_R_A =(TextView)findViewById(R.id.tv_NH_R_A);
                 final TextView NH_S_A =(TextView)findViewById(R.id.tv_NH_S_A);
@@ -250,6 +258,27 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 final TextView NH_S_D =(TextView)findViewById(R.id.tv_NH_S_D);
                 final TextView NH_T_D =(TextView)findViewById(R.id.tv_NH_T_D);
 
+                final Button data_kabel_jurusan_A = (Button) findViewById(R.id.data_kabel_jurusan_A);
+                final Button data_kabel_jurusan_B = (Button) findViewById(R.id.data_kabel_jurusan_B);
+                final Button data_kabel_jurusan_C = (Button) findViewById(R.id.data_kabel_jurusan_C);
+                final Button data_kabel_jurusan_D = (Button) findViewById(R.id.data_kabel_jurusan_D);
+
+                final TextView jenis_kabel_A =(TextView)findViewById(R.id.fv_jeniskabel_A);
+                final TextView jenis_kabel_B =(TextView)findViewById(R.id.fv_jeniskabel_B);
+                final TextView jenis_kabel_C =(TextView)findViewById(R.id.fv_jeniskabel_C);
+                final TextView jenis_kabel_D =(TextView)findViewById(R.id.fv_jeniskabel_D);
+
+                final TextView penampang_outlet_A =(TextView)findViewById(R.id.fv_penampangOUTLET_A);
+                final TextView penampang_outlet_B =(TextView)findViewById(R.id.fv_penampangOUTLET_B);
+                final TextView penampang_outlet_C =(TextView)findViewById(R.id.fv_penampangOUTLET_C);
+                final TextView penampang_outlet_D =(TextView)findViewById(R.id.fv_penampangOUTLET_D);
+
+                final TextView sambungan_kabel_jtr_A = (TextView)findViewById(R.id.fv_sambungankabelkejtr_A);
+                final TextView sambungan_kabel_jtr_B = (TextView)findViewById(R.id.fv_sambungankabelkejtr_B);
+                final TextView sambungan_kabel_jtr_C = (TextView)findViewById(R.id.fv_sambungankabelkejtr_C);
+                final TextView sambungan_kabel_jtr_D = (TextView)findViewById(R.id.fv_sambungankabelkejtr_D);
+
+
 
 
 
@@ -260,10 +289,10 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 TextView fv_tahananbodytrafo =(TextView)findViewById(R.id.fv_tahananbodytrafo);
                 TextView fv_jeniskabelINLET =(TextView)findViewById(R.id.fv_jeniskabelINLET);
                 TextView fv_penampangINLET =(TextView)findViewById(R.id.fv_penampangINLET);
-                TextView fv_jeniskabelOUTLET =(TextView)findViewById(R.id.fv_jeniskabelOUTLET);
-                TextView fv_jeniskabel =(TextView)findViewById(R.id.fv_jeniskabel);
-                TextView fv_penampangOUTLET =(TextView)findViewById(R.id.fv_penampangOUTLET);
-                TextView fv_sambungankabelkejtr =(TextView)findViewById(R.id.fv_sambungankabelkejtr);
+//                TextView fv_jeniskabelOUTLET =(TextView)findViewById(R.id.fv_jeniskabelOUTLET);
+                TextView fv_jeniskabel_A =(TextView)findViewById(R.id.fv_jeniskabel_A);
+                TextView fv_penampangOUTLET_A =(TextView)findViewById(R.id.fv_penampangOUTLET_A);
+                TextView fv_sambungankabelkejtr_A =(TextView)findViewById(R.id.fv_sambungankabelkejtr_A);
                 TextView tv_keterangan = (TextView) findViewById(R.id.tv_keterangan);
 
                 fv_namapetugas.setText(petugas);
@@ -347,7 +376,7 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         view.setSelected(true);
                         button_jurusan_B.setSelected(false);
                         button_jurusan_A.setSelected(false);
-                        button_jurusan_D.setSelected(false);
+                        button_jurusan_C.setSelected(false);
                     }
                 });
 
@@ -470,6 +499,62 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
 
                 }
 
+                data_kabel_jurusan_A.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_A_Data_Kabel.setVisibility(View.VISIBLE);
+                        Jur_B_Data_Kabel.setVisibility(View.INVISIBLE);
+                        Jur_C_Data_Kabel.setVisibility(View.INVISIBLE);
+                        Jur_D_Data_Kabel.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        data_kabel_jurusan_B.setSelected(false);
+                        data_kabel_jurusan_C.setSelected(false);
+                        data_kabel_jurusan_D.setSelected(false);
+                    }
+                });
+
+                data_kabel_jurusan_B.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_A_Data_Kabel.setVisibility(View.INVISIBLE);
+                        Jur_B_Data_Kabel.setVisibility(View.VISIBLE);
+                        Jur_C_Data_Kabel.setVisibility(View.INVISIBLE);
+                        Jur_D_Data_Kabel.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        data_kabel_jurusan_A.setSelected(false);
+                        data_kabel_jurusan_C.setSelected(false);
+                        data_kabel_jurusan_D.setSelected(false);
+                    }
+                });
+
+                data_kabel_jurusan_C.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_A_Data_Kabel.setVisibility(View.INVISIBLE);
+                        Jur_B_Data_Kabel.setVisibility(View.INVISIBLE);
+                        Jur_C_Data_Kabel.setVisibility(View.VISIBLE);
+                        Jur_D_Data_Kabel.setVisibility(View.INVISIBLE);
+                        view.setSelected(true);
+                        data_kabel_jurusan_A.setSelected(false);
+                        data_kabel_jurusan_B.setSelected(false);
+                        data_kabel_jurusan_D.setSelected(false);
+                    }
+                });
+
+                data_kabel_jurusan_D.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Jur_A_Data_Kabel.setVisibility(View.INVISIBLE);
+                        Jur_B_Data_Kabel.setVisibility(View.INVISIBLE);
+                        Jur_C_Data_Kabel.setVisibility(View.INVISIBLE);
+                        Jur_D_Data_Kabel.setVisibility(View.VISIBLE);
+                        view.setSelected(true);
+                        data_kabel_jurusan_A.setSelected(false);
+                        data_kabel_jurusan_C.setSelected(false);
+                        data_kabel_jurusan_B.setSelected(false);
+                    }
+                });
+
 
                 fv_jumlaharresterterpasang.setText(arrester);
                 fv_tahananarrester.setText(saklar_tahanan_arrester);
@@ -479,25 +564,25 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 fv_penampangINLET.setText(penampang_inlet);
 
                 if(data_kabel_jurusan.toLowerCase().equals("jurusan a")){
-                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
-                    fv_jeniskabel.setText(jenis_kabel_jurusan_a);
-                    fv_penampangOUTLET.setText(penampang_jurusan_a);
-                    fv_sambungankabelkejtr.setText(sambung_kabel_jtr_jurusan_a);
+//                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
+                    fv_jeniskabel_A.setText(jenis_kabel_jurusan_a);
+                    fv_penampangOUTLET_A.setText(penampang_jurusan_a);
+                    fv_sambungankabelkejtr_A.setText(sambung_kabel_jtr_jurusan_a);
                 }else if(data_kabel_jurusan.toLowerCase().equals("jurusan b")){
-                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
-                    fv_jeniskabel.setText(jenis_kabel_jurusan_b);
-                    fv_penampangOUTLET.setText(penampang_jurusan_b);
-                    fv_sambungankabelkejtr.setText(sambung_kabel_jtr_jurusan_b);
+//                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
+                    fv_jeniskabel_A.setText(jenis_kabel_jurusan_b);
+                    fv_penampangOUTLET_A.setText(penampang_jurusan_b);
+                    fv_sambungankabelkejtr_A.setText(sambung_kabel_jtr_jurusan_b);
                 }else if(data_kabel_jurusan.toLowerCase().equals("jurusan c")){
-                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
-                    fv_jeniskabel.setText(jenis_kabel_jurusan_c);
-                    fv_penampangOUTLET.setText(penampang_jurusan_c);
-                    fv_sambungankabelkejtr.setText(sambung_kabel_jtr_jurusan_c);
+//                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
+                    fv_jeniskabel_A.setText(jenis_kabel_jurusan_c);
+                    fv_penampangOUTLET_A.setText(penampang_jurusan_c);
+                    fv_sambungankabelkejtr_A.setText(sambung_kabel_jtr_jurusan_c);
                 }else if(data_kabel_jurusan.toLowerCase().equals("jurusan d")){
-                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
-                    fv_jeniskabel.setText(jenis_kabel_jurusan_d);
-                    fv_penampangOUTLET.setText(penampang_jurusan_d);
-                    fv_sambungankabelkejtr.setText(sambung_kabel_jtr_jurusan_d);
+//                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
+                    fv_jeniskabel_A.setText(jenis_kabel_jurusan_d);
+                    fv_penampangOUTLET_A.setText(penampang_jurusan_d);
+                    fv_sambungankabelkejtr_A.setText(sambung_kabel_jtr_jurusan_d);
                 }
 
             }
