@@ -92,12 +92,12 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 final String fuse_R_Jur_B=dataSnapshot.child("fuse_R_Jur_B").getValue().toString() ;
                 final String fuse_S_Jur_B=dataSnapshot.child("fuse_S_Jur_B").getValue().toString() ;
                 final String fuse_T_Jur_B=dataSnapshot.child("fuse_T_Jur_B").getValue().toString() ;
-                String fuse_R_Jur_C=dataSnapshot.child("fuse_R_Jur_C").getValue().toString() ;
-                String fuse_S_Jur_C=dataSnapshot.child("fuse_S_Jur_C").getValue().toString() ;
-                String fuse_T_Jur_C=dataSnapshot.child("fuse_T_Jur_C").getValue().toString() ;
-//                String fuse_R_Jur_D=dataSnapshot.child("fuse_R_Jur_D").getValue().toString() ;
-//                String fuse_S_Jur_D=dataSnapshot.child("fuse_S_Jur_D").getValue().toString() ;
-//                String fuse_T_Jur_D=dataSnapshot.child("fuse_T_Jur_D").getValue().toString() ;
+                final String fuse_R_Jur_C=dataSnapshot.child("fuse_R_Jur_C").getValue().toString() ;
+                final String fuse_S_Jur_C=dataSnapshot.child("fuse_S_Jur_C").getValue().toString() ;
+                final String fuse_T_Jur_C=dataSnapshot.child("fuse_T_Jur_C").getValue().toString() ;
+                final String fuse_R_Jur_D=dataSnapshot.child("fuse_R_Jur_D").getValue().toString() ;
+                final String fuse_S_Jur_D=dataSnapshot.child("fuse_S_Jur_D").getValue().toString() ;
+                final String fuse_T_Jur_D=dataSnapshot.child("fuse_T_Jur_D").getValue().toString() ;
 
                 String nh_jurusan=dataSnapshot.child("nh_jurusan").getValue().toString() ;
                 final String NH_R_Jur_A=dataSnapshot.child("nh_R_Jur_A").getValue().toString() ;
@@ -109,9 +109,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 final String NH_R_Jur_C=dataSnapshot.child("nh_R_Jur_C").getValue().toString() ;
                 final String NH_S_Jur_C=dataSnapshot.child("nh_S_Jur_C").getValue().toString() ;
                 final String NH_T_Jur_C=dataSnapshot.child("nh_T_Jur_C").getValue().toString() ;
-                String NH_R_Jur_D=dataSnapshot.child("nh_R_Jur_D").getValue().toString() ;
-                String NH_S_Jur_D=dataSnapshot.child("nh_S_Jur_D").getValue().toString() ;
-                String NH_T_Jur_D=dataSnapshot.child("nh_T_Jur_D").getValue().toString() ;
+                final String NH_R_Jur_D=dataSnapshot.child("nh_R_Jur_D").getValue().toString() ;
+                final String NH_S_Jur_D=dataSnapshot.child("nh_S_Jur_D").getValue().toString() ;
+                final String NH_T_Jur_D=dataSnapshot.child("nh_T_Jur_D").getValue().toString() ;
 
                 String arrester=dataSnapshot.child("arrester").getValue().toString() ;
                 //===============
@@ -132,41 +132,43 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 //Jenis Kabel Outlet
                 String data_kabel_jurusan=dataSnapshot.child("data_kabel_jurusan").getValue().toString();
                 //button jnyy lvtc nyfgby
-                String jenis_kabel_jurusan_a=dataSnapshot.child("jenis_kabel_jurusan_a").getValue().toString();
+                final String jenis_kabel_jurusan_a=dataSnapshot.child("jenis_kabel_jurusan_a").getValue().toString();
                 //=====
                 //button 25 35 70 95 150
-                String penampang_jurusan_a=dataSnapshot.child("penampang_jurusan_a").getValue().toString();
+                final String penampang_jurusan_a=dataSnapshot.child("penampang_jurusan_a").getValue().toString();
                 //=====
                 //spinner
-                String sambung_kabel_jtr_jurusan_a=dataSnapshot.child("sambung_kabel_jtr_jurusan_a").getValue().toString();
+                final String sambung_kabel_jtr_jurusan_a=dataSnapshot.child("sambung_kabel_jtr_jurusan_a").getValue().toString();
 //                =====
                 //button jnyy lvtc nyfgby
-                String jenis_kabel_jurusan_b=dataSnapshot.child("jenis_kabel_jurusan_b").getValue().toString();
+                final String jenis_kabel_jurusan_b=dataSnapshot.child("jenis_kabel_jurusan_b").getValue().toString();
                 //=====
                 //button 25 35 70 95 150
-                String penampang_jurusan_b=dataSnapshot.child("penampang_jurusan_b").getValue().toString();
+                final String penampang_jurusan_b=dataSnapshot.child("penampang_jurusan_b").getValue().toString();
                 //=====
                 //spinner
-                String sambung_kabel_jtr_jurusan_b=dataSnapshot.child("sambung_kabel_jtr_jurusan_b").getValue().toString();
+                final String sambung_kabel_jtr_jurusan_b=dataSnapshot.child("sambung_kabel_jtr_jurusan_b").getValue().toString();
                 //=====
                 //button jnyy lvtc nyfgby
-                String jenis_kabel_jurusan_c=dataSnapshot.child("jenis_kabel_jurusan_c").getValue().toString();
+                final String jenis_kabel_jurusan_c=dataSnapshot.child("jenis_kabel_jurusan_c").getValue().toString();
                 //=====
                 //button 25 35 70 95 150
-                String penampang_jurusan_c=dataSnapshot.child("penampang_jurusan_c").getValue().toString();
+                final String penampang_jurusan_c=dataSnapshot.child("penampang_jurusan_c").getValue().toString();
                 //=====
                 //spinner
-                String sambung_kabel_jtr_jurusan_c=dataSnapshot.child("sambung_kabel_jtr_jurusan_c").getValue().toString();
+                final String sambung_kabel_jtr_jurusan_c=dataSnapshot.child("sambung_kabel_jtr_jurusan_c").getValue().toString();
                 //=====
                 //button jnyy lvtc nyfgby
-                String jenis_kabel_jurusan_d=dataSnapshot.child("jenis_kabel_jurusan_d").getValue().toString();
+                final String jenis_kabel_jurusan_d=dataSnapshot.child("jenis_kabel_jurusan_d").getValue().toString();
                 //=====
                 //button 25 35 70 95 150
-                String penampang_jurusan_d=dataSnapshot.child("penampang_jurusan_d").getValue().toString();
+                final String penampang_jurusan_d=dataSnapshot.child("penampang_jurusan_d").getValue().toString();
                 //=====
                 //spinner
-                String sambung_kabel_jtr_jurusan_d=dataSnapshot.child("sambung_kabel_jtr_jurusan_d").getValue().toString();
+                final String sambung_kabel_jtr_jurusan_d=dataSnapshot.child("sambung_kabel_jtr_jurusan_d").getValue().toString();
                 //=====
+                final String keterangan_lain_lain=dataSnapshot.child("keterangan_lain_lain").getValue().toString();
+
                 //=======================
 
                 TextView fv_namapetugas =(TextView)findViewById(R.id.fv_namapetugas);
@@ -198,17 +200,17 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 final TextView jurusan_A_fuse_S =(TextView)findViewById(R.id.jurusan_A_fuse_S);
                 final TextView jurusan_A_fuse_T =(TextView)findViewById(R.id.jurusan_A_fuse_T);
 
-                TextView jurusan_B_fuse_R =(TextView)findViewById(R.id.jurusan_B_fuse_R);
-                TextView jurusan_B_fuse_S =(TextView)findViewById(R.id.jurusan_B_fuse_S);
-                TextView jurusan_B_fuse_T =(TextView)findViewById(R.id.jurusan_B_fuse_T);
+                final TextView jurusan_B_fuse_R =(TextView)findViewById(R.id.jurusan_B_fuse_R);
+                final TextView jurusan_B_fuse_S =(TextView)findViewById(R.id.jurusan_B_fuse_S);
+                final TextView jurusan_B_fuse_T =(TextView)findViewById(R.id.jurusan_B_fuse_T);
 
-                TextView jurusan_C_fuse_R =(TextView)findViewById(R.id.jurusan_C_fuse_R);
-                TextView jurusan_C_fuse_S =(TextView)findViewById(R.id.jurusan_C_fuse_S);
-                TextView jurusan_C_fuse_T =(TextView)findViewById(R.id.jurusan_C_fuse_T);
+                final TextView jurusan_C_fuse_R =(TextView)findViewById(R.id.jurusan_C_fuse_R);
+                final TextView jurusan_C_fuse_S =(TextView)findViewById(R.id.jurusan_C_fuse_S);
+                final TextView jurusan_C_fuse_T =(TextView)findViewById(R.id.jurusan_C_fuse_T);
 
-                TextView jurusan_D_fuse_R =(TextView)findViewById(R.id.jurusan_D_fuse_R);
-                TextView jurusan_D_fuse_S =(TextView)findViewById(R.id.jurusan_D_fuse_S);
-                TextView jurusan_D_fuse_T =(TextView)findViewById(R.id.jurusan_D_fuse_T);
+                final TextView jurusan_D_fuse_R =(TextView)findViewById(R.id.jurusan_D_fuse_R);
+                final TextView jurusan_D_fuse_S =(TextView)findViewById(R.id.jurusan_D_fuse_S);
+                final TextView jurusan_D_fuse_T =(TextView)findViewById(R.id.jurusan_D_fuse_T);
 
 //                TextView fv_fusejurusan =(TextView)findViewById(R.id.fv_NH_jurusan);
 
@@ -290,9 +292,18 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 TextView fv_jeniskabelINLET =(TextView)findViewById(R.id.fv_jeniskabelINLET);
                 TextView fv_penampangINLET =(TextView)findViewById(R.id.fv_penampangINLET);
 //                TextView fv_jeniskabelOUTLET =(TextView)findViewById(R.id.fv_jeniskabelOUTLET);
-                TextView fv_jeniskabel_A =(TextView)findViewById(R.id.fv_jeniskabel_A);
-                TextView fv_penampangOUTLET_A =(TextView)findViewById(R.id.fv_penampangOUTLET_A);
-                TextView fv_sambungankabelkejtr_A =(TextView)findViewById(R.id.fv_sambungankabelkejtr_A);
+                final TextView fv_jeniskabel_A =(TextView)findViewById(R.id.fv_jeniskabel_A);
+                final TextView fv_penampangOUTLET_A =(TextView)findViewById(R.id.fv_penampangOUTLET_A);
+                final TextView fv_sambungankabelkejtr_A =(TextView)findViewById(R.id.fv_sambungankabelkejtr_A);
+                final TextView fv_jeniskabel_B =(TextView)findViewById(R.id.fv_jeniskabel_B);
+                final TextView fv_penampangOUTLET_B =(TextView)findViewById(R.id.fv_penampangOUTLET_B);
+                final TextView fv_sambungankabelkejtr_B =(TextView)findViewById(R.id.fv_sambungankabelkejtr_B);
+                final TextView fv_jeniskabel_C =(TextView)findViewById(R.id.fv_jeniskabel_C);
+                final TextView fv_penampangOUTLET_C =(TextView)findViewById(R.id.fv_penampangOUTLET_C);
+                final TextView fv_sambungankabelkejtr_C =(TextView)findViewById(R.id.fv_sambungankabelkejtr_C);
+                final TextView fv_jeniskabel_D =(TextView)findViewById(R.id.fv_jeniskabel_D);
+                final TextView fv_penampangOUTLET_D =(TextView)findViewById(R.id.fv_penampangOUTLET_D);
+                final TextView fv_sambungankabelkejtr_D =(TextView)findViewById(R.id.fv_sambungankabelkejtr_D);
                 TextView tv_keterangan = (TextView) findViewById(R.id.tv_keterangan);
 
                 fv_namapetugas.setText(petugas);
@@ -331,6 +342,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_C_fuse.setVisibility(View.INVISIBLE);
                         Jur_B_fuse.setVisibility(View.INVISIBLE);
                         Jur_D_fuse.setVisibility(View.INVISIBLE);
+                        jurusan_A_fuse_R.setText(fuse_R_Jur_A);
+                        jurusan_A_fuse_S.setText(fuse_S_Jur_A);
+                        jurusan_A_fuse_T.setText(fuse_T_Jur_A);
                         view.setSelected(true);
                         button_jurusan_B.setSelected(false);
                         button_jurusan_C.setSelected(false);
@@ -345,6 +359,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_A_fuse.setVisibility(View.INVISIBLE);
                         Jur_C_fuse.setVisibility(View.INVISIBLE);
                         Jur_D_fuse.setVisibility(View.INVISIBLE);
+                        jurusan_B_fuse_R.setText(fuse_R_Jur_B);
+                        jurusan_B_fuse_S.setText(fuse_S_Jur_B);
+                        jurusan_B_fuse_T.setText(fuse_T_Jur_B);
                         view.setSelected(true);
                         button_jurusan_A.setSelected(false);
                         button_jurusan_C.setSelected(false);
@@ -359,6 +376,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_A_fuse.setVisibility(View.INVISIBLE);
                         Jur_B_fuse.setVisibility(View.INVISIBLE);
                         Jur_D_fuse.setVisibility(View.INVISIBLE);
+                        jurusan_C_fuse_R.setText(fuse_R_Jur_C);
+                        jurusan_C_fuse_S.setText(fuse_S_Jur_C);
+                        jurusan_C_fuse_T.setText(fuse_T_Jur_C);
                         view.setSelected(true);
                         button_jurusan_B.setSelected(false);
                         button_jurusan_A.setSelected(false);
@@ -373,6 +393,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_A_fuse.setVisibility(View.INVISIBLE);
                         Jur_B_fuse.setVisibility(View.INVISIBLE);
                         Jur_C_fuse.setVisibility(View.INVISIBLE);
+                        jurusan_D_fuse_R.setText(fuse_R_Jur_D);
+                        jurusan_D_fuse_S.setText(fuse_S_Jur_D);
+                        jurusan_D_fuse_T.setText(fuse_T_Jur_D);
                         view.setSelected(true);
                         button_jurusan_B.setSelected(false);
                         button_jurusan_A.setSelected(false);
@@ -381,35 +404,7 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 });
 
 
-                if(fuse_jurusan.toLowerCase().equals("jurusan a")){
-                    jurusan_A_fuse_R.setText(fuse_R_Jur_A);
-                    jurusan_A_fuse_S.setText(fuse_S_Jur_A);
-                    jurusan_A_fuse_T.setText(fuse_T_Jur_A);
-                    button_jurusan_A.setSelected(true);
-                    Jur_A_fuse.setVisibility(View.VISIBLE);
 
-                }else if(fuse_jurusan.toLowerCase().equals("jurusan b")){
-                    jurusan_B_fuse_R.setText(fuse_R_Jur_B);
-                    jurusan_B_fuse_S.setText(fuse_S_Jur_B);
-                    jurusan_B_fuse_T.setText(fuse_T_Jur_B);
-                    button_jurusan_B.setSelected(true);
-                    Jur_B_fuse.setVisibility(View.VISIBLE);
-
-                }else if(fuse_jurusan.toLowerCase().equals("jurusan c")){
-                    jurusan_C_fuse_R.setText(fuse_R_Jur_C);
-                    jurusan_C_fuse_S.setText(fuse_S_Jur_C);
-                    jurusan_C_fuse_T.setText(fuse_T_Jur_C);
-                    button_jurusan_C.setSelected(true);
-                    Jur_C_fuse.setVisibility(View.VISIBLE);
-
-                }
-//                else if (fuse_jurusan.toLowerCase().equals("jurusan d")) {
-//                    jurusan_D_fuse_R.setText(fuse_R_Jur_D);
-//                    jurusan_D_fuse_S.setText(fuse_S_Jur_D);
-//                    jurusan_D_fuse_T.setText(fuse_T_Jur_D);
-//                    button_jurusan_D.setSelected(true);
-//
-//                }
 
                 button_NH_jurusan_A.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -418,6 +413,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_NH_B.setVisibility(View.INVISIBLE);
                         Jur_NH_C.setVisibility(View.INVISIBLE);
                         Jur_NH_D.setVisibility(View.INVISIBLE);
+                        NH_R_A.setText(NH_R_Jur_A);
+                        NH_S_A.setText(NH_S_Jur_A);
+                        NH_T_A.setText(NH_T_Jur_A);
                         view.setSelected(true);
                         button_NH_jurusan_B.setSelected(false);
                         button_NH_jurusan_C.setSelected(false);
@@ -432,6 +430,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_NH_A.setVisibility(View.INVISIBLE);
                         Jur_NH_C.setVisibility(View.INVISIBLE);
                         Jur_NH_D.setVisibility(View.INVISIBLE);
+                        NH_R_B.setText(NH_R_Jur_B);
+                        NH_S_B.setText(NH_S_Jur_B);
+                        NH_T_B.setText(NH_T_Jur_B);
                         view.setSelected(true);
                         button_NH_jurusan_A.setSelected(false);
                         button_NH_jurusan_C.setSelected(false);
@@ -446,6 +447,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_NH_A.setVisibility(View.INVISIBLE);
                         Jur_NH_B.setVisibility(View.INVISIBLE);
                         Jur_NH_D.setVisibility(View.INVISIBLE);
+                        NH_R_C.setText(NH_R_Jur_C);
+                        NH_S_C.setText(NH_S_Jur_C);
+                        NH_T_C.setText(NH_T_Jur_C);
                         view.setSelected(true);
                         button_NH_jurusan_B.setSelected(false);
                         button_NH_jurusan_A.setSelected(false);
@@ -460,6 +464,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_NH_B.setVisibility(View.INVISIBLE);
                         Jur_NH_C.setVisibility(View.INVISIBLE);
                         Jur_NH_A.setVisibility(View.INVISIBLE);
+                        NH_R_D.setText(NH_R_Jur_D);
+                        NH_S_D.setText(NH_S_Jur_D);
+                        NH_T_D.setText(NH_T_Jur_D);
                         view.setSelected(true);
                         button_NH_jurusan_B.setSelected(false);
                         button_NH_jurusan_C.setSelected(false);
@@ -467,37 +474,7 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                     }
                 });
 
-                if(nh_jurusan.toLowerCase().equals("jurusan a")){
 
-                    NH_R_A.setText(NH_R_Jur_A);
-                    NH_S_A.setText(NH_S_Jur_A);
-                    NH_T_A.setText(NH_T_Jur_A);
-                    button_NH_jurusan_A.setSelected(true);
-                    Jur_NH_A.setVisibility(View.VISIBLE);
-
-                }else  if(nh_jurusan.toLowerCase().equals("jurusan b")){
-
-                    NH_R_B.setText(NH_R_Jur_B);
-                    NH_S_B.setText(NH_S_Jur_B);
-                    NH_T_B.setText(NH_T_Jur_B);
-                    button_NH_jurusan_B.setSelected(true);
-                    Jur_NH_B.setVisibility(View.VISIBLE);
-
-                }else  if(nh_jurusan.toLowerCase().equals("jurusan c")){
-                    NH_R_C.setText(NH_R_Jur_C);
-                    NH_S_C.setText(NH_S_Jur_C);
-                    NH_T_C.setText(NH_T_Jur_C);
-                    button_NH_jurusan_C.setSelected(true);
-                    Jur_NH_C.setVisibility(View.VISIBLE);
-
-                }else  if(nh_jurusan.toLowerCase().equals("jurusan d")){
-                    NH_R_D.setText(NH_R_Jur_D);
-                    NH_S_D.setText(NH_S_Jur_D);
-                    NH_T_D.setText(NH_T_Jur_D);
-                    button_NH_jurusan_D.setSelected(true);
-                    Jur_NH_D.setVisibility(View.VISIBLE);
-
-                }
 
                 data_kabel_jurusan_A.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -506,6 +483,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_B_Data_Kabel.setVisibility(View.INVISIBLE);
                         Jur_C_Data_Kabel.setVisibility(View.INVISIBLE);
                         Jur_D_Data_Kabel.setVisibility(View.INVISIBLE);
+                        fv_jeniskabel_A.setText(jenis_kabel_jurusan_a);
+                        fv_penampangOUTLET_A.setText(penampang_jurusan_a);
+                        fv_sambungankabelkejtr_A.setText(sambung_kabel_jtr_jurusan_a);
                         view.setSelected(true);
                         data_kabel_jurusan_B.setSelected(false);
                         data_kabel_jurusan_C.setSelected(false);
@@ -520,6 +500,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_B_Data_Kabel.setVisibility(View.VISIBLE);
                         Jur_C_Data_Kabel.setVisibility(View.INVISIBLE);
                         Jur_D_Data_Kabel.setVisibility(View.INVISIBLE);
+                        fv_jeniskabel_B.setText(jenis_kabel_jurusan_b);
+                        fv_penampangOUTLET_B.setText(penampang_jurusan_b);
+                        fv_sambungankabelkejtr_B.setText(sambung_kabel_jtr_jurusan_b);
                         view.setSelected(true);
                         data_kabel_jurusan_A.setSelected(false);
                         data_kabel_jurusan_C.setSelected(false);
@@ -534,6 +517,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_B_Data_Kabel.setVisibility(View.INVISIBLE);
                         Jur_C_Data_Kabel.setVisibility(View.VISIBLE);
                         Jur_D_Data_Kabel.setVisibility(View.INVISIBLE);
+                        fv_jeniskabel_C.setText(jenis_kabel_jurusan_c);
+                        fv_penampangOUTLET_C.setText(penampang_jurusan_c);
+                        fv_sambungankabelkejtr_C.setText(sambung_kabel_jtr_jurusan_c);
                         view.setSelected(true);
                         data_kabel_jurusan_A.setSelected(false);
                         data_kabel_jurusan_B.setSelected(false);
@@ -548,6 +534,9 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                         Jur_B_Data_Kabel.setVisibility(View.INVISIBLE);
                         Jur_C_Data_Kabel.setVisibility(View.INVISIBLE);
                         Jur_D_Data_Kabel.setVisibility(View.VISIBLE);
+                        fv_jeniskabel_D.setText(jenis_kabel_jurusan_d);
+                        fv_penampangOUTLET_D.setText(penampang_jurusan_d);
+                        fv_sambungankabelkejtr_D.setText(sambung_kabel_jtr_jurusan_d);
                         view.setSelected(true);
                         data_kabel_jurusan_A.setSelected(false);
                         data_kabel_jurusan_C.setSelected(false);
@@ -562,28 +551,8 @@ public class Lihat_detil_detil_activity extends AppCompatActivity {
                 fv_tahananbodytrafo.setText(body_trafo);
                 fv_jeniskabelINLET.setText(kabel_inlet);
                 fv_penampangINLET.setText(penampang_inlet);
+                tv_keterangan.setText(keterangan_lain_lain);
 
-                if(data_kabel_jurusan.toLowerCase().equals("jurusan a")){
-//                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
-                    fv_jeniskabel_A.setText(jenis_kabel_jurusan_a);
-                    fv_penampangOUTLET_A.setText(penampang_jurusan_a);
-                    fv_sambungankabelkejtr_A.setText(sambung_kabel_jtr_jurusan_a);
-                }else if(data_kabel_jurusan.toLowerCase().equals("jurusan b")){
-//                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
-                    fv_jeniskabel_A.setText(jenis_kabel_jurusan_b);
-                    fv_penampangOUTLET_A.setText(penampang_jurusan_b);
-                    fv_sambungankabelkejtr_A.setText(sambung_kabel_jtr_jurusan_b);
-                }else if(data_kabel_jurusan.toLowerCase().equals("jurusan c")){
-//                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
-                    fv_jeniskabel_A.setText(jenis_kabel_jurusan_c);
-                    fv_penampangOUTLET_A.setText(penampang_jurusan_c);
-                    fv_sambungankabelkejtr_A.setText(sambung_kabel_jtr_jurusan_c);
-                }else if(data_kabel_jurusan.toLowerCase().equals("jurusan d")){
-//                    fv_jeniskabelOUTLET.setText(data_kabel_jurusan);
-                    fv_jeniskabel_A.setText(jenis_kabel_jurusan_d);
-                    fv_penampangOUTLET_A.setText(penampang_jurusan_d);
-                    fv_sambungankabelkejtr_A.setText(sambung_kabel_jtr_jurusan_d);
-                }
 
             }
 
